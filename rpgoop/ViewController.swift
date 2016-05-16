@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
         chestButton.hidden = true
         printLabel.text = chestMessage
-        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "generateRandomEnemy", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(ViewController.generateRandomEnemy), userInfo: nil, repeats: false)
     }
     
     @IBAction func attackTapped(sender: AnyObject) {

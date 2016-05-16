@@ -18,9 +18,10 @@ class Player: Character {
         }
     }
     
+    
+    // Make a computed property: inventory, that is make an "accessor" / "getter"
     private var _inventory = [String]()
     
-    // Make a computed property for this too / "accessor" / "getter"
     var inventory: [String] {
         return _inventory
     }
